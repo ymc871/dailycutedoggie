@@ -33,6 +33,8 @@ export default function Home(props: { imageUrl: string }) {
             return;
         }
         console.log('Subscribing user:', email);
+        window.dataLayer.push({ Email: email });
+        alert("You're subscribed");
     };
 
     return (
